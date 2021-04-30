@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
 nav {
   width: 100%;
   display: flex;
@@ -16,6 +20,12 @@ nav .container {
   align-items: stretch;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+}
+
 .left-nav,
 .right-nav {
   border: 2px salmon solid;
@@ -23,14 +33,55 @@ nav .container {
   width: 50%;
 }
 
+.left-nav ul {
+  justify-content: start;
+}
+.right-nav ul {
+  justify-content: end;
+}
+
+.right-nav ul li,
+.left-nav ul li {
+  padding: 10px;
+}
+
 nav .container ul {
   display: flex;
 }
 
-.right-nav ul {
-  justify-self: end;
-}
-
 nav .container ul li {
   list-style-type: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  max-width: 80%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .container {
+  width: 90%;
+  border: 2px salmon solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.left-footer,
+.right-footer {
+  border: 2px salmon solid;
+  align-self: stretch;
+  width: 50%;
 }
