@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
 }
 
 ul {
@@ -10,11 +12,14 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 89px;
 }
 
 nav .container {
   width: 90%;
-  border: 2px salmon solid;
+  /* border: 2px salmon solid; */
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -28,7 +33,7 @@ a:visited {
 
 .left-nav,
 .right-nav {
-  border: 2px salmon solid;
+  /* border: 2px salmon solid; */
   align-self: stretch;
   width: 50%;
 }
@@ -63,17 +68,38 @@ main {
 
 img {
   max-width: 80%;
+  width: 272px;
+  padding: 109px 0 20px 0;
+}
+
+button {
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
 }
 
 footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
 }
 
 footer .container {
   width: 90%;
-  border: 2px salmon solid;
+  /* border: 2px salmon solid; */
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -81,7 +107,27 @@ footer .container {
 
 .left-footer,
 .right-footer {
-  border: 2px salmon solid;
+  /* border: 2px salmon solid; */
   align-self: stretch;
   width: 50%;
+}
+
+.left-footer ul {
+  justify-content: start;
+}
+.right-footer ul {
+  justify-content: end;
+}
+
+.right-footer ul li,
+.left-footer ul li {
+  padding: 10px;
+}
+
+footer .container ul {
+  display: flex;
+}
+
+footer .container ul li {
+  list-style-type: none;
 }
