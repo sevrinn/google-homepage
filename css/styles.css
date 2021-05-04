@@ -72,6 +72,23 @@ img {
   padding: 109px 0 20px 0;
 }
 
+.search-container {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  height: 44px;
+  margin: 0 auto;
+  width: 482px;
+}
+.center-search {
+  background-color: transparent;
+  border: none;
+  width: 387px;
+  height: 37px;
+}
+
 button {
   background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
   background-color: #f2f2f2;
